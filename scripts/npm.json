@@ -1,0 +1,13 @@
+{
+  "name": "dnt-starter",
+  "version": "0.0.1",
+  "description": "Fast dnt template project.",
+  "outDir": "./.npm",
+  "entryPoints": [
+    {
+      "kind": "export",
+      "name": ".",
+      "path": "./index.ts"
+    }
+  ]
+}
