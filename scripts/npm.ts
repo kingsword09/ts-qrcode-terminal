@@ -1,6 +1,6 @@
 import * as path from "std_path";
 import { build, emptyDir, type BuildOptions, type EntryPoint } from "dnt";
-import npmConfig from "./npm.json" assert { type: "json" };
+import npmConfig from "./npm.json" with { type: "json" };
 
 export const buildOptions: BuildOptions = {
   entryPoints: npmConfig.entryPoints as EntryPoint[],
@@ -13,6 +13,7 @@ export const buildOptions: BuildOptions = {
   compilerOptions: {
     target: "Latest",
     importHelpers: true,
+    lib: ["ES2021", "DOM"],
   },
   packageManager: "npm",
   package: {

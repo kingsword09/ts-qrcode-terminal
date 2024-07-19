@@ -1,13 +1,15 @@
 {
   "tasks": {
     "build": "deno run -A ./scripts/npm.ts",
-    "pub": "deno run --unstable -A ./scripts/pub.ts"
+    "pub": "deno run --unstable -A ./scripts/pub.ts",
+    "test": "deno run -A ./examples/test.ts"
   },
   "compilerOptions": {
     "allowJs": false,
     "lib": [
       "deno.unstable",
-      "deno.window"
+      "deno.window",
+      "DOM"
     ],
     "strict": true,
     "strictNullChecks": true
@@ -29,7 +31,7 @@
     }
   },
   "imports": {
-    "dnt": "https://deno.land/x/dnt@0.38.0/mod.ts",
-    "std_path": "https://deno.land/std@0.197.0/path/mod.ts"
+    "dnt": "jsr:@deno/dnt",
+    "std_path": "jsr:@std/path"
   }
 }
