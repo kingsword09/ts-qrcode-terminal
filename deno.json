@@ -1,4 +1,7 @@
 {
+  "name": "@kingsword09/ts-qrcode-terminal",
+  "version": "1.0.0",
+  "exports": "./index.ts",
   "tasks": {
     "build": "deno run -A ./scripts/npm.ts",
     "pub": "deno run --unstable -A ./scripts/pub.ts",
@@ -33,5 +36,6 @@
   "imports": {
     "dnt": "jsr:@deno/dnt",
     "std_path": "jsr:@std/path"
-  }
+  },
+  "exclude": ["scripts"]
 }
