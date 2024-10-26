@@ -1,6 +1,6 @@
 {
   "name": "ts-qrcode-terminal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ts qrcode terminal",
   "outDir": "./.npm",
   "entryPoints": [

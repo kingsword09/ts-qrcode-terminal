@@ -20,6 +20,12 @@ export const buildOptions: BuildOptions = {
     name: npmConfig.name,
     version: npmConfig.version,
     description: npmConfig.description,
+    author: "kingsword09",
+    homepage: "https://github.com/kingsword09/ts-qrcode-terminal",
+    bugs: {
+      url: "https://github.com/kingsword09/ts-qrcode-terminal/issues",
+      email: "kingsword09@gmail.com"
+    },
     license: "MIT"
   },
   postBuild() {

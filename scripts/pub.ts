@@ -14,7 +14,7 @@ export const doPub = async (cwd: string) => {
 
 export const doPubFromJson = async (inputConfigFile: string) => {
   const npmConfigs = (
-    await import(inputConfigFile, { assert: { type: "json" } })
+    await import(inputConfigFile, { with: { type: "json" } })
   ).default;
 
   await doPub(npmConfigs.outDir);
