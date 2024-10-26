@@ -1,6 +1,6 @@
 {
   "name": "@kingsword09/ts-qrcode-terminal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "exports": "./index.ts",
   "tasks": {
     "build": "deno run -A ./scripts/npm.ts",

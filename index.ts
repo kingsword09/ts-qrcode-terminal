@@ -4,6 +4,18 @@ import { fill, repeat, toCell, white } from "./src/helper.ts";
 import type { QrcodeOptions } from "./types.ts";
 export { QRErrorCorrectLevel };
 
+/**
+ * This is a function that generates QR codes.
+ *
+ * @example
+ * ```ts
+ * import { generate, QRErrorCorrectLevel } from  "jsr:@kingsword09/ts-qrcode-terminal"
+ * generate("https://github.com/kingsword09/ts-qrcode-terminal", {
+ *   small: true,
+ *   qrErrorCorrectLevel: QRErrorCorrectLevel.L,
+ * });
+ * ```
+ */
 export function generate(
   input: string,
   opts: QrcodeOptions = {
